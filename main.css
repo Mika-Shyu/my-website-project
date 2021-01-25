@@ -1,5 +1,35 @@
-h1 {color:navy;font: size 80px;text-align: center;}
-h2 {text-align:center}
-*{background-color: dodgerblue;}
-p{font-size:large;text-align: center;}
-.floatRight{float:right;margin-left:20px;}
+@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,700&display=swap');
+
+h1 {color:seashell;font-size: 60px;text-align:center;font-family: 'Josefin Sans', sans-serif;margin-top:0%;}
+
+h2 {color:darkseagreen;text-align:center;font-size:40px;;margin-block:0%}
+
+body {background-image: url("images/background4.jpg") ;     
+    background-repeat: no-repeat; background-position:top;
+    background-size:cover;background-attachment: fixed;background-blend-mode:darken;}
+    
+p {color:whitesmoke;font-size:30px;text-align:justify;}
+
+
+
+*{box-sizing: border-box;padding:5px 30px 10px;}
+
+/* Numbered lists like 1, 1.1, 2.2.1... */
+ol li {display:block;} /* hide original list counter */
+ol > li:first-child {counter-reset: item;} /* reset counter */
+ol > li {counter-increment: item; position: relative;} /* increment counter */
+ol > li:before {content:counters(item, ".") ". "; position:absolute; margin-right:100%; right: 10px;} /* print counter */
+
+ol{font-size:xx-large;font-weight:bolder;color:lemonchiffon}
+
+.container{display:flex; flex-direction: row;justify-content:center;font-weight: bolder;}
+/* menu */
+
+a {text-decoration-color:lightgreen;color:whitesmoke}
+img {width:10%;position: relative;top:-110px;right:-300px}
+
+dl{color:lightgreen;font-size: x-large;}
+
+.lightfont {font-weight:normal;}
+
+
